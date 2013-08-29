@@ -93,7 +93,7 @@
 
 // We always want to export defined variables, dll or no
 #if !defined(GFLAGS_DLL_DEFINE_FLAG)
-#  if defined(_MSC_VER)
+#  if 0
 #    define GFLAGS_DLL_DEFINE_FLAG __declspec(dllimport)
 #  else
 #    define GFLAGS_DLL_DEFINE_FLAG

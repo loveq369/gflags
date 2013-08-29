@@ -80,7 +80,7 @@
 #  endif
 #endif
 
-#if WINDOWS
+#ifdef _WIN32
 // This must be defined before the windows.h is included.
 // It's needed for mutex.h, to give access to the TryLock method.
 #  if !defined(_WIN32_WINNT) && !(defined( __MINGW32__) || defined(__MINGW64__))
